@@ -96,6 +96,7 @@ def to_solve_problems(handle):
             if solved.get(s) == None:
                 print(s, end = ', ')
                 print(p['name'])
+        print("")
     
 def get_solved_during_contest(handle):
     request_link = 'https://codeforces.com/api/user.status?handle=' + handle
@@ -165,7 +166,7 @@ def get_solved_during_contest(handle):
     
 def get_solved_problems(handle):
     
-    print('Enter the tag (or the word all if there is no specific tag):')
+    print('Enter the tag (or the word "all" if there is no specific tag):')
     tag = str(input())
     
     print('Enter the minimum rating: ')
@@ -176,7 +177,7 @@ def get_solved_problems(handle):
     problems_link = 'https://codeforces.com/api/problemset.problems?tags='
     submissions_link = 'https://codeforces.com/api/user.status?handle='
     
-    if tag == 'None':
+    if tag == 'all':
         problems_link = 'https://codeforces.com/api/problemset.problems'
         tag = ''
     
@@ -243,6 +244,7 @@ def get_solved_problems(handle):
             result.append(now)
     
     result.sort()
+    print('The number of solved problems in the given rage is:', end = ' ')
     print(len(result))
     
     for res in result:
@@ -296,10 +298,10 @@ print('Enter your CF handle:', end = ' ')
 handle = str(input())
 
 print('Type:')
-print('\t1 to get a list of all problems solved during a cntest.')
-print('\t2 to get a list of all problems that were not solved during a virtual participation (GYMs only).')
-print('\t3 to get a list of all solved problems in a difficulty range.')
-print('\t4 to see what your rating will be if we ignore any contest that makes your rate decrease.')
+print('\t"1" to get a list of all problems solved during a cntest.')
+print('\t"2" to get a list of all problems that were not solved during a virtual participation (GYMs only).')
+print('\t"3" to get a list of all solved problems in a difficulty range.')
+print('\t"4" to see what your rating will be if we ignore any contest that makes your rate decrease.')
 
 todo = str(input())
 
