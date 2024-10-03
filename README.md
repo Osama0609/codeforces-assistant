@@ -15,4 +15,5 @@ The script is easy to use. You just need a program that can compile and run Pyht
 Once you run the "main.py" file, it will ask you what you want to do, so it doesn't need any special constructions. Just don't type extra spaces and lines.
 
 **Notes**
+
 As codeforces api limits the number of requests allowed to one request per two seconds, it may take some time to perform some actions.
