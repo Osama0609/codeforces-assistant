@@ -11,3 +11,5 @@ The script is easy to use. You just need a program that can compile and run Pyht
   2. Creates a list of all problems that weren't solved during virtual participations (gyms only). Team participation is also considered since it's meant to improve team performance.
   3. Given a specific problem tag (it's also possible to consider all tags) and a difficulty range, it can find the number of solved problems with the given tag, that has a difficulty covered by the given range. It will also provide a list of these problems.
   4. Given a user's handle, it finds what will his rating be, if we ignore negative rating changes. Currently, it doesn't give a precise value, since it ignores the fact the some rated rounds will become unrated if the division changes (and vice versa). Also, a precise calculation requires some data that isn't provided by codeforces api.
+
+Once you run a python file that contains the script, it will ask you what you want to do, so it doesn't need any special constructions. Just don't type extra spaces and lines.
