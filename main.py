@@ -96,8 +96,6 @@ def to_solve_problems(handle):
             if solved.get(s) == None:
                 print(s, end = ', ')
                 print(p['name'])
-        
-        print('Done\n')
     
 def get_solved_during_contest(handle):
     request_link = 'https://codeforces.com/api/user.status?handle=' + handle
