@@ -244,7 +244,7 @@ def get_solved_problems(handle):
             result.append(now)
     
     result.sort()
-    print('The number of solved problems in the given rage is:', end = ' ')
+    print('The number of solved problems in the given range is:', end = ' ')
     print(len(result))
     
     for res in result:
